@@ -3,7 +3,7 @@
 
 import React, { useEffect, useMemo, useState } from "react";
 
-const API_BASE = "https://beast-consultancy.onrender.com";
+const API_BASE = import.meta.env.VITE_API_BASE || "http://127.0.0.1:5000";
 
 // ----------------- Small helpers -----------------
 const COUNTRY_CONFIG = {
